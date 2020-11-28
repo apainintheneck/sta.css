@@ -77,12 +77,13 @@
     padding-right: 10px;
     padding-left: 10px;
     border: none;
+    border-right: 3px gray solid;
+    border-left: 3px gray solid;
 }
 
 .stac-btn:hover {
     border-right: 3px black solid;
     border-left: 3px black solid;
-    font-weight: bold;
 }
 
 /* Made text within code tags larger and added a light gray backround. */

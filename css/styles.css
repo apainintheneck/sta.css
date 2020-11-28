@@ -1,21 +1,4 @@
-/* Center content in the header. */
-header {
-    display:flex;
-    justify-content: center;
-}
-
-/* Position the logo within the header. */
-#logo {
-    margin-top: 30px;
-}
-
 /* Id used to bold the current page in the navegation bar. */
 #current-page {
     font-weight: bold;
-}
-
-.title-txt {
-    font-size: 2.9em;
-    margin-top: 25px;
-    margin-bottom: 0px;
 }
