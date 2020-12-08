@@ -1,53 +1,51 @@
-@import "config-sta.css";
+/* @import "config-sta.css"; */
 
 /* Body now has a background color of light purple, all content is centered, and text uses the font Arial. */
-.stac-body {
-    background-color: var(--body-bg-color);
+.body {
+    background-color: var(--body-bg-color, #FFEFD5);
     text-align: center;
     font-family: var(--font);
     color: var(--font-color);
 }
 
-.stac-header {
+.header {
     font-size: 2em;
     margin-top: 25px;
     margin-bottom: 15px;
 }
 
 /* Links in navegation bar are now purple. */
-.stac-nav a {
+.nav a {
     padding: 15px;
     padding-bottom: 4px;
     font-size: 1.5em;
     text-decoration: none;
-    color: var(--nav-txt-color);
+    color: var(--nav-txt-color, black);
 }
 
 /* Underline hovered links in the navegation bar. */
-.stac-nav a:hover {
-    border-bottom: 2px var(--nav-txt-color) solid;
+.nav a:hover {
+    border-bottom: 2px var(--nav-txt-color, black) solid;
 }
 
-.stac-footer {
-    margin-bottom: 20px;
-    margin-top: 20px;
-    color: var(--footer-txt-color);
+.footer {
+    color: var(--footer-txt-color, black);
 }
 
 /* Changed the background color to light purple */
-.stac-nav, .stac-footer {
-    background-color: var(--nf-bg-color);
+.nav, .footer {
+    background-color: var(--nf-bg-color, #F08080);
     max-width: 850px;
     margin: auto;
     padding: 15px;
     border-radius: 15px;
-    margin-bottom: 15px;
-    margin-top: 15px;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
-.stac-box {
+.box {
     text-align: left;
-    padding: 15px;
+    padding: var(--box-padding, 20px);
     border-radius: var(--border-radius, 15px);
     background-color: white;
     margin: auto;
@@ -55,68 +53,60 @@
     margin-top: var(--box-margin, 10px);
 }
 
-.stac-box > h1, .stac-box > h2 {
-    text-align: center;
+.box > h1, .box > h2 {
+  text-align: center;
 }
 
-.stac-img {
+.media {
     margin: auto;
-    margin-bottom: var(--img-margin);
-    margin-top: var(--img-margin);
-    border-radius: var(--border-radius);
+    margin-bottom: var(--media-margin);
+    margin-top: var(--media-margin);
+    border-radius: var(--border-radius, 15px);
+}
+
+.box > .media {
+    max-width: 100%;
 }
 
 /* Made all buttons light green with a grey rounded border.  */
-.stac-btn {
-    background-color: var(--btn-bg-color);
+.btn {
+    background-color: var(--btn-bg-color, lightgray);
     color: var(--btn-txt-color);
-    border-radius: 20px;
+    border-radius: 10px;
     max-width: 400px;
     font-size: 1.3em;
     padding: 3px;
     padding-right: 10px;
     padding-left: 10px;
-    border: none;
-    border-right: 3px gray solid;
-    border-left: 3px gray solid;
+    border: 1px var(--btn-bg-color, lightgray) solid;
+    border-right: 3px var(--btn-bg-color, lightgray) solid;
+    border-left: 3px var(--btn-bg-color, lightgray) solid;
+    margin: 10px;
+    transition: background-color 1s;
 }
 
-.stac-btn:hover {
-    border-right: 3px black solid;
-    border-left: 3px black solid;
+.btn:hover {
+    background-color: rgba(255, 255, 255, 0.6);
 }
 
 /* Made text within code tags larger and added a light gray backround. */
-.stac-box code {
-    background-color: var(--code-bg-color);
+.box code {
+    background-color: var(--code-bg-color, #D3D3D3);
     color: var(--code-txt-color);
-    margin-right: 2px;
-    margin-left: 2px;
-    font-size: 1.2em;
+    padding-right: 5px;
+    padding-left: 5px;
+    font-size: 1.1em;
+    border-radius: 5px;
 }
 
 /*Add small shadow to everything. */
-.stac-box, .stac-img-shadow, .stac-btn, .stac-nav, .stac-footer {
-    box-shadow: 2px 2px 5px #888888;
+.box, .btn, .nav, .footer, .media {
+    box-shadow: 1px 1px 4px #888;
 }
 
 /*stac item width*/
-.stac-w5 {
-    max-width: 775px;
-}
-
-.stac-w4 {
-    max-width: 700px;
-}
-
-.stac-w3 {
-    max-width: 625px;
-}
-
-.stac-w2 {
-    max-width: 550px;
-}
-
-.stac-w1 {
-    max-width: 475px;
-}
+.w1 { max-width: 475px; }
+.w2 { max-width: 550px; }
+.w3 { max-width: 625px; }
+.w4 { max-width: 700px; }
+.w5 { max-width: 775px; }
