@@ -3,7 +3,17 @@ It is a small, simple CSS library that allows to build clean looking webpages. I
 
 ---
 
-Todo:  
+####Features:  
+- Custom button.
+- Custom containers(.box and .media).  
+- Custom `<code>` tag inside .box.
+- Custom nav and footer.
+- Default theme.  
+- Customization built in through the config-sta.css file.  
+- 1 custom theme(purple).
+
+
+####Todo:  
 - ~~Change button design.~~
 - Change box design to allow full width images inside.  
 - Create three more basic themes.  
