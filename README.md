@@ -1,5 +1,5 @@
 # What is sta.css?
-It is a small, simple CSS library that allows to build clean looking webpages. It is great for making tutorials and other simple static websites.
+It is a small, simple CSS framework that allows to build clean looking webpages with low effort. It is great for making tutorials and other simple static websites.
 
 ---
 
