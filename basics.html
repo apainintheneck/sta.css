@@ -12,7 +12,6 @@ Purpose: This page teaches the user how to make a git repository, add files, and
         <meta charset="utf-8" />
         <title> sta.css : basics </title>
         <link href="css/sta.css" rel="stylesheet" type="text/css" />
-        <link href="css/styles.css" rel="stylesheet" type="text/css" />
     </head>
 
     <body class="body">
@@ -28,10 +27,19 @@ Purpose: This page teaches the user how to make a git repository, add files, and
             <a href="more.html">More</a>
         </nav>
 
+        <hr>
+
         <div class="box w4">
             <h2 class="center"> Basics </h2>
             <hr>
-            This page teaches you how to make a git repository, add files, and make commits.
+            Here are the basic design concepts found in this framework. Click on a link to jump to that section or scroll to see everything.
+            <ul>
+                <li>Boxes: Basic containers with internal padding that are used for text and media.</li>
+                <li>Media: Full width borderless containers for images, videos, and iframes.</li>
+                <li>Nav and Footer: The nav bar and footer help frame the page.</li>
+                <li>Code: Display code easily.</li>
+                <li>Buttons: Button styles can be applied to links or buttons.</li>
+            </ul>
         </div>
 
         <div class="box w3">
@@ -41,12 +49,14 @@ Purpose: This page teaches the user how to make a git repository, add files, and
         <img src="img/starting_page-console-1.png" alt="Console window showing how to check the git version using the git --version command." />
 
         <div class="box w3">
+          <p class="code-block">
             Create the folder that will hold your project and enter it. Now you need to initialize your repository. Type <code>git init</code> in the command line. This will place a new git repo in the current directory.
+            <p>
         </div>
 
         <img src="img/starting_page-console-2.png" alt="Console window showing how to initialize a git repository using the git init command." />
 
-        <div class="box w3">
+        <div class="box w3 code-block">
             Next, I will show you how files are added to the repo. Git allows you to decide which files in the folder get tracked and which are ignored. Create a new empty text file called mammals.txt. We will now check the status of files in the repo by typing <code>git status</code>. It is good practice to check the status before adding files.
         </div>
 
@@ -91,8 +101,8 @@ Purpose: This page teaches the user how to make a git repository, add files, and
         <button class="btn" onclick="window.location.href='themes.html'">Continue learning &#8594;</button>
 
         <footer class="footer">
-            CST336 Internet Programming. 2020&copy; Robell<br>
-            <a href="https://git-scm.com/downloads/logos">Git Logo</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.
+            2020&copy; Robell<br>
+            Find more of my work on <a href="https://github.com/apainintheneck">Github</a>.
         </footer>
 
     </body>

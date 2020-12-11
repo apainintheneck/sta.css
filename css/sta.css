@@ -101,8 +101,9 @@
     display: inline-block;;
     margin: 4px;
     border-radius: 10px;
+    box-sizing: border-box;
     max-width: 400px;
-    padding: 3px;
+    padding: 5px;
     padding-right: 10px;
     padding-left: 10px;
     font-size: 1.15em;
@@ -110,17 +111,15 @@
 .btn:link {
     text-decoration: none;
 }
-.btn.clear {
-    transition: border-color 0.5s, box-shadow 1s;
-    border: 1px var(--btn-bg-color, gray) solid;
-    border-right: 3px var(--btn-bg-color, gray) solid;
-    border-left: 3px var(--btn-bg-color, gray) solid;
-    box-shadow: none;
-    background-color: var(--btn-bg-color, rgba(0, 0, 0, 0));
+.btn.border {
+    transition: border-color 1s;
+    border: 1px var(--btn-bg-color, lightgray) solid;
+    border-right: 3px var(--btn-bg-color, lightgray) solid;
+    border-left: 3px var(--btn-bg-color, lightgray) solid;
+    background-color: var(--btn-bg-color, lightgray);
     color: var(--btn-txt-color, black);
 }
-.btn.clear:hover {
-    box-shadow: inset 0px 0px 5px rgba(0,0,0,0.5);
+.btn.border:hover {
     border-color: black;
 }
 .btn.light {
@@ -135,15 +134,13 @@
     background-color: rgba(255, 255, 255, 0.6);
 }
 .btn.dark {
-    transition: background-color 1s;
-    border: 1px var(--btn-bg-color, #5C4E4E) solid;
-    border-right: 3px var(--btn-bg-color, #5C4E4E) solid;
-    border-left: 3px var(--btn-bg-color, #5C4E4E) solid;
-    background-color: var(--btn-bg-color, #5C4E4E);
-    color: var(--btn-txt-color, #F5F5E9);
+    transition: background-color 1s, color 0.5s;
+    background-color: var(--btn-bg-color, lightgray);
+    color: var(--btn-txt-color, black);
 }
 .btn.dark:hover {
-    background-color: rgba(4, 10, 24, 0.8);
+    background-color: rgba(4, 10, 24, 0.6);
+    color: var(--btn-txt-color, #F5F5E9);
 }
 
 /* Max Width */

@@ -3,7 +3,7 @@
 <!--
 
 Website: Homepage
-Page: index.php
+Page: index.html
 Author: Kevin Robell
 Purpose: This page gives a quick intro to sta.css.
 
@@ -12,7 +12,6 @@ Purpose: This page gives a quick intro to sta.css.
         <meta charset="utf-8" />
         <title> sta.css : home </title>
         <link href="css/sta.css" rel="stylesheet" type="text/css" />
-        <link href="css/styles.css" rel="stylesheet" type="text/css" />
     </head>
 
     <body class="body">
@@ -30,61 +29,42 @@ Purpose: This page gives a quick intro to sta.css.
 
         <div class="box w4">
             <h2>Introduction</h2><hr>
-            <h3>What is git?</h3>
-            Git is a type of version control software that makes it easy for multiple people to collaborate on a codebase.
+            <h3>What is sta.css?</h3>
+            It is a CSS framework that allows you to build simple static websites that look clean and professional. It built to be customizable so you can easily build your own themes or use premade community themes without modifying the main framework CSS file.
 
-            <h3>How does git work?</h3>
-            Git works by saving multiple copies of the changed files. This allows software developers to make changes and then reverse those changes if the new code has bugs. Git also tracks when files are changed which simplifies the process of combining multiple versions of code.
+            <h3>Who is sta.css for?</h3>
+            It is built for developers who want a small and easy to use CSS framework with a high level of customizability. Many of the default colors, sizes, fonts, and borders can be changed using the additional config-sta.css file.
 
-            <h3>What is the history of git?</h3>
-            Git was originally developed by the Linux development community in 2005 to help streamline the Linux kernel development process.
+            <h3>How does sta.css work?</h3>
+            There are two files needed to use this framework.
+            <ol>
+                <li>The sta.css file holds the main framework with a default theme.</li>
+                <li>The optional config-sta.css file holds custom theme information.</li>
+            </ol>
+            You only need to link the sta.css file to your project and include the config-sta.css file in the same directory as the sta.css file to change the default theme.
+
+            <hr>
+
+            What are you waiting for? Download it below, learn the basics, or look at some themes!
 
             <br><br>
 
-            <b>Note:</b> This tutorial was created using <code>git version 2.24.3</code>.
-
-            <img class="media w3" src="img/los-angeles-2679490_1920.jpg" alt="Console window with the text git..." />
+            <b>Note:</b> This website was styled using <code>sta.css version 0.0.1</code>.
         </div>
 
-        <img class="media w3" src="img/los-angeles-2679490_1920.jpg" alt="Console window with the text git..." />
-
-        <div class="box w3">
-            <h2>Basic Concepts</h2><hr>
-            <ul>
-                <li><b>Cloning:</b> This is copying the entire codebase locally to your computer.</li>
-                <li><b>Origin:</b> The main software release.</li>
-                <li><b>Branch:</b> A copy of a the code that allows you to work on a feature without messing with the main code release.</li>
-                <li><b>Switch Branch:</b> Look at a different snapshot of the repository.</li>
-                <li><b>Merge:</b> Allows you to merge changes from another branch or the origin into the branch you are working on.</li>
-                <li><b>Commit:</b> A snapshot of the current state of your branch.</li>
-                <li><b>Adding:</b> Which files need to be in this commit.</li>
-                <li><b>Pull:</b> Download possible changes in your branch from server/website.</li>
-                <li><b>Push:</b> Send local changes on a branch to the server/website.</li>
-                <li><b>Repo:</b> Short for repository.</li>
-            </ul>
-
+        <div class="box w0">
+            <h2>Downloads</h2><hr>
+            <h3>Main Framework</h3>
+            <a class="btn light" href="#">Download sta.css</a>
+            <h3>Basic Themes</h3>
+            <a class="btn border" href="#">Download purple theme</a>
+            <a class="btn dark" href="#">Download red theme</a>
+            <a class="btn border" href="#">Download blue theme</a>
         </div>
-
-        <div class="box w4">
-            <h2>Three Steps</h2><hr>
-            There are three steps for this tutorial that focus on basics, themes, and working with a remote server.
-
-            <ol>
-                <li>The <a href="basics.html">Basics</a> section teaches you how to locally start a project and save your progress.</li>
-                <li>The <a href="themes.html">Themes</a> section teaches you how to create multiple versions of your project and then combine those versions together.</li>
-                <li>The <a href="more.html">remote server</a> section teaches you how to pull and push code changes to and from a remote server.</li>
-            </ol>
-
-            Open up your console window and let's get started.
-        </div>
-
-        <img class="media w4" src="img/clouds-5784152_1920.jpg" alt="Console window with the text git..." /><br>
-
-        <button class="btn dark" onclick="window.location.href='basics.html'">Start the tutorial &#8594;</button>
 
         <footer class="footer">
-            CST336 Internet Programming. 2020&copy; Robell<br>
-            <a href="https://git-scm.com/downloads/logos">Git Logo</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.
+            2020&copy; Robell<br>
+            Find more of my work on <a href="https://github.com/apainintheneck">Github</a>.
         </footer>
 
     </body>
