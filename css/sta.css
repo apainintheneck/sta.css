@@ -1,11 +1,19 @@
 /* @import "config-sta.css"; */
 
+/* Add small shadow to everything. */
+.box, .btn, .nav, .footer, .media, .code-block {
+    box-shadow: 1px 1px 4px #888;
+}
+
 /* body */
 .body {
     background-color: var(--body-bg-color, #FFEFD5);
     text-align: center;
-    font-family: var(--font);
+    font-family: var(--font, sans-serif);
     color: var(--font-color);
+}
+.body > hr {
+    max-width: 50%;
 }
 
 /* header */
@@ -25,6 +33,9 @@
 }
 .nav a:hover {
     border-bottom: 2px var(--nav-txt-color, black) solid;
+}
+.nav #current-page {
+    font-weight: bold;
 }
 
 /* footer */
@@ -62,31 +73,42 @@
     background-color: var(--box-bg-color, white);
     text-align: left;
 }
+.box.clear {
+    box-shadow: none;
+    background-color: rgba(0, 0, 0, 0);
+}
 .box > h1, .box > h2 {
     text-align: center;
 }
 .box .media, .box .box {
     max-width: 100%;
 }
-.box code, .code {
+.box > code, .code-block {
     border-radius: 5px;
     padding-right: 5px;
     padding-left: 5px;
     background-color: var(--code-bg-color, #D3D3D3);
     font-size: 1.1em;
+    font-family: monospace;
     color: var(--code-txt-color);
+}
+.box.code-block, .code-block {
+    padding: 5px;
 }
 
 /* btn */
 .btn {
-    transition: background-color 1s;
-    margin: 15px;
+    display: inline-block;;
+    margin: 4px;
     border-radius: 10px;
     max-width: 400px;
     padding: 3px;
     padding-right: 10px;
     padding-left: 10px;
-    font-size: 1.3em;
+    font-size: 1.15em;
+}
+.btn:link {
+    text-decoration: none;
 }
 .btn.clear {
     transition: border-color 0.5s, box-shadow 1s;
@@ -124,11 +146,6 @@
     background-color: rgba(4, 10, 24, 0.8);
 }
 
-/* Add small shadow to everything. */
-.box, .btn, .nav, .footer, .media {
-    box-shadow: 1px 1px 4px #888;
-}
-
 /* Max Width */
 .w0 { max-width: 400px; }
 .w1 { max-width: 475px; }
@@ -136,3 +153,4 @@
 .w3 { max-width: 625px; }
 .w4 { max-width: 700px; }
 .w5 { max-width: 775px; }
+.wfull { max-width: 100%; }
