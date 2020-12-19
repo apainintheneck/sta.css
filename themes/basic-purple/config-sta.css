@@ -1,14 +1,15 @@
+/* sta.css - basic purple theme */
 :root {
-    /*.stac-body*/
+    /* .body */
     --body-bg-color: #f1f1ff;
     --font: Arial, Helvetica, sans-serif;
 
-    /* .stac-nav, .stac-footer */
+    /* .nav, .footer */
     --nf-bg-color: #c3c5ec;
 
-    /* .stac-nav */
+    /* .nav */
     --nav-txt-color: #35087c;
 
-    /* .stac-btn */
+    /* .btn */
     --btn-bg-color: #bcd4e6;
 }

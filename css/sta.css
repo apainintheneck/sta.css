@@ -1,4 +1,4 @@
-/* @import "config-sta.css"; */
+@import "config-sta.css";
 
 /* Add small shadow to everything. */
 .box, .btn, .nav, .footer, .media, .code-block {
@@ -12,6 +12,7 @@ html {
 /* body */
 .body {
     background-color: var(--body-bg-color, #FFEFD5);
+    background-image: var(--body-bg-img);
     text-align: center;
     font-family: var(--font, sans-serif);
     color: var(--font-color, black);

@@ -4,17 +4,15 @@ It is a small, simple CSS framework that allows to build clean looking webpages 
 ---
 
 #### Features:  
-- Custom button.
+- Custom buttons.
 - Custom containers(.box and .media).  
 - Custom `<code>` tag inside .box.
 - Custom nav and footer.
 - Default theme.  
 - Customization built in through the config-sta.css file.  
-- 1 custom theme(purple).
-
+- 3 basic custom themes(purple, green, blue).
 
 #### Todo:  
-- Add more buttons(clear, light, dark).  
 - Add .wfixed which changes width from max-width to width.
 - Add default colors.
 - Allow full width media inside boxes.

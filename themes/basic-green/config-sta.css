@@ -1,0 +1,15 @@
+/* sta.css - basic green theme */
+:root {
+    /*.body*/
+    --body-bg-color: #d8f3dc;
+    --font: Arial, Helvetica, sans-serif;
+
+    /* .nav, .footer */
+    --nf-bg-color: #74c69d;
+
+    /* .nav */
+    --nav-txt-color: #1e2f23;
+
+    /* .btn */
+    --btn-bg-color: #dcbcac;
+}
