@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="html" lang="en">
 <!--
 
 Website: Intro to Git
@@ -27,78 +27,254 @@ Purpose: This page teaches the user how to make a git repository, add files, and
             <a href="more.html">More</a>
         </nav>
 
-        <hr>
-
+        <!-- Basics -->
         <div class="box w4">
-            <h2 class="center"> Basics </h2>
+            <h2> Basics </h2>
             <hr>
-            Here are the basic design concepts found in this framework. Click on a link to jump to that section or scroll to see everything.
+            Here are the basic CSS classes found in this framework.
             <ul>
-                <li>Boxes: Basic containers with internal padding that are used for text and media.</li>
-                <li>Media: Full width borderless containers for images, videos, and iframes.</li>
-                <li>Nav and Footer: The nav bar and footer help frame the page.</li>
-                <li>Code: Display code easily.</li>
-                <li>Buttons: Button styles can be applied to links or buttons.</li>
+                <li><a href="#body">Body</a>: Centers elements on page, sets font, and sets background.</li>
+                <li><a href="#nav">Nav</a>: The nav bar holds all of the relevant links at the top of the page.</li>
+                <li><a href="#width">Width</a>: Controls the max-width of given elements.</li>
+                <li><a href="#boxes">Boxes</a>: Basic containers with internal padding that can be used for text and media.</li>
+                <li><a href="#media">Media</a>: Full width borderless containers for images, videos, and iframes.</li>
+                <li><a href="#code">Code</a>: Display code easily.</li>
+                <li><a href="#buttons">Buttons</a>: Button styles can be applied to links or buttons.</li>
+                <li><a href="#footer">Footer</a>: The footer holds crediting and contact info at the bottom of the page.</li>
             </ul>
+            <hr>
         </div>
 
-        <div class="box w3">
-            First, you need to check if git is installed. Type <code>git —version</code> to find out the local version. Otherwise you will need to <a href="https://github.com/git-guides/install-git">install git</a>.
+        <br>
+
+        <!-- Body -->
+        <div id="body" class="box w3">
+            <h2> Body </h2>
+            <hr>
+            The <code>.body</code> class controls the background(color and image), centers child elements, and controls the default font and text color. This entire page is an example of the <code>.body</code> class.
         </div>
 
-        <img src="img/starting_page-console-1.png" alt="Console window showing how to check the git version using the git --version command." />
+        <details>
+            <summary class="btn">Code</summary>
+            <pre class="box code w2">
+&lt;body class="body"&gt;
+  ...
+&lt;/body&gt;</pre>
+        </details>
 
-        <div class="box w3">
-          <p class="code-block">
-            Create the folder that will hold your project and enter it. Now you need to initialize your repository. Type <code>git init</code> in the command line. This will place a new git repo in the current directory.
-            <p>
+        <br>
+
+        <!-- Nav -->
+        <div id="nav" class="box w3">
+            <h2> Nav </h2>
+            <hr>
+            The <code>.nav</code> class allows you to create nav bars on the page. The links are automatically spaced away from each other and the <code>#current-page</code> id allows you to bold the current page. Links are underlined when hovered over. It shares the same background as the <code>.footer</code> class.
         </div>
 
-        <img src="img/starting_page-console-2.png" alt="Console window showing how to initialize a git repository using the git init command." />
+        <details>
+            <summary class="btn">Example</summary>
+            <nav class="nav">
+                <a href="#example-url">Page 1</a>
+                <a id="current-page" href="#example-url">Page 2</a>
+                <a href="#example-url">Page 3</a>
+                <a href="#example-url">Page 4</a>
+            </nav>
+        </details>
+        <details>
+            <summary class="btn">Code</summary>
+            <pre class="box code w2">
+&lt;nav class=&quot;nav&quot;&gt;
+    &lt;a href=&quot;#example-url&quot;&gt;Page 1&lt;/a&gt;
+    &lt;a id=&quot;current-page&quot; href=&quot;#example-url&quot;&gt;Page 2&lt;/a&gt;
+    &lt;a href=&quot;#example-url&quot;&gt;Page 3&lt;/a&gt;
+    &lt;a href=&quot;#example-url&quot;&gt;Page 4&lt;/a&gt;
+&lt;/nav&gt;</pre>
+        </details>
 
-        <div class="box w3 code-block">
-            Next, I will show you how files are added to the repo. Git allows you to decide which files in the folder get tracked and which are ignored. Create a new empty text file called mammals.txt. We will now check the status of files in the repo by typing <code>git status</code>. It is good practice to check the status before adding files.
+        <br>
+
+        <!-- Width -->
+        <div id="width" class="box w3">
+            <h2> Width </h2>
+            <hr>
+            Almost anything can be sized using the max-width properties but they are most frequently used with the classes <code>.box</code> and <code>.media</code>. There are six default sizes that go from smallest to largest: <code>.w0</code> <code>.w1</code> <code>.w2</code> <code>.w3</code> <code>.w4</code> <code>.w5</code>. Additionally, there is the <code>.wfull</code> class which sets the max-width to 100%.
         </div>
 
-        <img src="img/starting_page-console-3.png" alt="Console window showing how to check the status using the git status command." />
+        <details>
+            <summary class="btn">Example</summary>
+            <div class="box w1">
+                <h3> .w1 </h3>
+            </div>
+            <div class="box w3">
+                <h3> .w3 </h3>
+            </div>
+            <div class="box w5">
+                <h3> .w5 </h3>
+            </div>
+        </details>
+        <details>
+            <summary class="btn">Code</summary>
+            <pre class="box code w2">
+&lt;div class=&quot;box w1&quot;&gt;
+    &lt;h3&gt; .w1 &lt;/h3&gt;
+&lt;/div&gt;
+&lt;div class=&quot;box w3&quot;&gt;
+    &lt;h3&gt; .w3 &lt;/h3&gt;
+&lt;/div&gt;
+&lt;div class=&quot;box w5&quot;&gt;
+    &lt;h3&gt; .w5 &lt;/h3&gt;
+&lt;/div&gt;</pre>
+        </details>
 
-        <div class="box w3">
-            You can see that the new file is untracked. That means we should add it to be tracked by typing <code>git add &lt;filename&gt;</code>. Check the status again by typing <code>git status</code>.
+        <br>
+
+        <!-- Boxes -->
+        <div id="boxes" class="box w3">
+            <h2> Boxes </h2>
+            <hr>
+            Boxes are basic containers with internal padding that can be used for text and media. There are two main types of classes: <code>.box</code> and <code>.box.clear</code>. All boxes have <code>&lth1&gt</code> and <code>&lth2&gt</code> tags automatically centered. Child <code>.box</code> and <code>.media</code> classes automatically have a max-width of 100%.
         </div>
 
-        <img src="img/starting_page-console-4.png" alt="Console window showing how to add a file to the commit using the git add filename command." />
+        <details>
+            <summary class="btn">Example</summary>
+            <div class="box clear w2">
+                <h3> .box.clear </h3>
+                Ut porttitor, lacus et tristique ultrices, diam nisi tempor leo, eget gravida tellus mauris elementum mi. Maecenas efficitur erat at quam gravida ullamcorper.
+            </div>
 
-        <div class="box w3">
-            Now that we have added the file we can make a commit. A commit is a snapshot of all tracked files in the repo. Users are then allowed to see the state of tracked files over time. Type <code>git commit</code> and the default text editor will open up for you to type your commit message.
+            <div class="box w2">
+                <h3> .box </h3>
+                Ut porttitor, lacus et tristique ultrices, diam nisi tempor leo, eget gravida tellus mauris elementum mi. Maecenas efficitur erat at quam gravida ullamcorper.
+                <div class="box">
+                    <h3> .box > .box </h3>
+                    Ut porttitor, lacus et tristique ultrices, diam nisi tempor leo, eget gravida tellus mauris elementum mi. Maecenas efficitur erat at quam gravida ullamcorper.
+                </div>
+            </div>
+        </details>
+        <details>
+            <summary class="btn">Code</summary>
+            <pre class="box code w2">
+&lt;div class=&quot;box clear w2&quot;&gt;
+    &lt;h3&gt; .box.clear &lt;/h3&gt;
+    Ut porttitor, lacus et tristique ultrices, diam nisi tempor leo, eget gravida tellus mauris elementum mi. Maecenas efficitur erat at quam gravida ullamcorper.
+&lt;/div&gt;
+
+&lt;div class=&quot;box w2&quot;&gt;
+    &lt;h3&gt; .box &lt;/h3&gt;
+    Ut porttitor, lacus et tristique ultrices, diam nisi tempor leo, eget gravida tellus mauris elementum mi. Maecenas efficitur erat at quam gravida ullamcorper.
+    &lt;div class=&quot;box&quot;&gt;
+        &lt;h3&gt; .box &gt; .box &lt;/h3&gt;
+        Ut porttitor, lacus et tristique ultrices, diam nisi tempor leo, eget gravida tellus mauris elementum mi. Maecenas efficitur erat at quam gravida ullamcorper.
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+        </details>
+
+        <br>
+
+        <!-- Media -->
+        <div id="media" class="box w3">
+            <h2> Media </h2>
+            <hr>
+            The <code>.media</code> class styles a borderless media container. It is built to be used with the <code>&lt;img&gt;</code>, <code>&lt;video&gt;</code>, and <code>&lt;iframe&gt;</code> tags.
         </div>
 
-        <img src="img/starting_page-console-6.png" alt="Console window showing how to make a commit using the git commit command." /><br>
+        <details>
+            <summary class="btn">Example</summary>
+            <img class="media w2" src="https://picsum.photos/700/100"/>
+            <br>
+            <iframe class="media w2" width="480" height="360" src="https://www.youtube.com/embed/J---aiyznGQ?controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </details>
+        <details>
+            <summary class="btn">Code</summary>
+            <pre class="box code w2">
+&lt;img class=&quot;media w2&quot; src=&quot;https://picsum.photos/700/100&quot;/&gt;
+&lt;br&gt;
+&lt;iframe class=&quot;media w2&quot; width=&quot;480&quot; height=&quot;360&quot; src=&quot;https://www.youtube.com/embed/J---aiyznGQ?controls=0&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;</pre>
+        </details>
 
-        <img src="img/starting_page-console-5.png" alt="Console window showing how to make the commit message using your default console text editor." />
+        <br>
 
-        <div class="box w3">
-            You’ve made your first commit. Now let’s practice and make another one. This time create two more files called two.txt and three.txt. Type <code>git add .</code> to add all untracked files. This time we will commit the files by typing <code>git commit -m “commit message”</code> which avoids the use of the external text editor.
+        <!-- Code -->
+        <div id="code" class="box w3">
+            <h2> Code </h2>
+            <hr>
+            The <code>.code</code> class allows you to style bits of code. It is applied automatically to all <code>&lt;code&gt;</code> tags that are inside a container that uses the <code>.box</code> class. Additionally, there are custom <code>.box.code</code> containers for multiple lines of code that are best built with the <code>&lt;pre&gt;</code> tag.
         </div>
 
-        <img src="img/starting_page-console-7.png" alt="Console window showing how to add all untracked files using the git add . command and commit using the git commit -m 'commit message' command." />
+        <details>
+            <summary class="btn">Example</summary>
+            Lorem <span class="code">consectetur</span> elit.
+            <div class="box w2">
+                Etiam nibh enim, luctus ac <code>faucibus</code> sit amet, molestie nec ex.
+                <pre class="box code">
+Mauris commodo tincidunt vestibulum. Morbi faucibus vulputate mollis. Duis sed dui condimentum lacus ultrices porta in eget est.</pre>
+            </div>
+        </details>
+        <details>
+            <summary class="btn">Code</summary>
+            <pre class="box code w2">
+Lorem &lt;span class=&quot;code&quot;&gt;consectetur&lt;/span&gt; elit.
+&lt;div class=&quot;box w2&quot;&gt;
+   Etiam nibh enim, luctus ac &lt;code&gt;faucibus&lt;/code&gt; sit amet, molestie nec ex.
+   &lt;pre class=&quot;box code&quot;&gt;
+Mauris commodo tincidunt vestibulum. Morbi faucibus vulputate mollis. Duis sed dui condimentum lacus ultrices porta in eget est.&lt;/pre&gt;
+&lt;/div&gt;</pre>
+        </details>
 
-        <div class="box w3">
-            You can remove files by deleting them and making another commit. Let’s delete two.txt and three.txt.
+        <br>
+
+        <!-- Buttons -->
+        <div id="buttons" class="box w3">
+            <h2> Buttons </h2>
+            <hr>
+            The main button is created using the <code>.btn</code> class. There are four default hover effects: <code>.btn.border</code>, <code>.btn.lines</code>, <code>.btn.dark</code>, and <code>.btn.light</code>. Each of these can be seen below. Anything that is clickable can be styled to look like a button.
         </div>
 
-        <img src="img/starting_page-console-8.png" alt="Console window showing how to delete tracked files from your project." />
+        <details>
+            <summary class="btn">Example</summary>
+            <div class="box w3">
+                <span class="btn">.btn</span>
+                <span class="btn dark">.btn.dark</span>
+                <span class="btn light">.btn.light</span>
+                <span class="btn border">.btn.border</span>
+                <span class="btn lines">.btn.lines</span>
+            </div>
+        </details>
+        <details>
+            <summary class="btn">Code</summary>
+            <pre class="box code w2">
+&lt;div class=&quot;box w1&quot;&gt;
+    &lt;span class=&quot;btn&quot;&gt;.btn&lt;/span&gt;
+    &lt;span class=&quot;btn dark&quot;&gt;.btn.dark&lt;/span&gt;
+    &lt;span class=&quot;btn light&quot;&gt;.btn.light&lt;/span&gt;
+    &lt;span class=&quot;btn border&quot;&gt;.btn.border&lt;/span&gt;
+    &lt;span class=&quot;btn lines&quot;&gt;.btn.lines&lt;/span&gt;
+&lt;/div&gt;</pre>
+        </details>
 
-        <div class="box w3">
-            To look at the commits we’ve made so far type <code>git log</code>.
+        <br>
+
+        <!-- Footer -->
+        <div id="footer" class="box w3">
+            <h2> Footer </h2>
+            <hr>
+            The <code>.footer</code> class creates a footer for the page which has matching background and width to the <code>.body</code> class. This space is used for crediting and branding.
         </div>
 
-        <img src="img/starting_page-console-9.png" alt="Console window showing how to access the log data using the git log command." />
-
-        <div class="box w4">
-            Now you know how to initialize a repo and make commits. The next step is themes.
-        </div>
-
-        <button class="btn" onclick="window.location.href='themes.html'">Continue learning &#8594;</button>
+        <details>
+            <summary class="btn">Example</summary>
+            <footer class="footer">
+                Year&copy; Last Name<br>
+                Find more of my work on Github.
+            </footer>
+        </details>
+        <details>
+            <summary class="btn">Code</summary>
+            <pre class="box code w2">
+&lt;footer class=&quot;footer&quot;&gt;
+    Year&amp;copy; Last Name&lt;br&gt; Find more of my work on Github.
+&lt;/footer&gt;</pre>
+        </details>
 
         <footer class="footer">
             2020&copy; Robell<br>
