@@ -33,5 +33,4 @@ It is a small, simple CSS framework that allows to build clean looking webpages 
 
 ---
 
-## License
-## [MIT](LICENSE)
+## License: [MIT](LICENSE)
