@@ -67,6 +67,9 @@ html {
     margin-top: var(--media-margin, 10px);
     border-radius: var(--border-radius, 15px);
 }
+.media.clear {
+    box-shadow: none;
+}
 
 /* box */
 .box {
@@ -88,6 +91,9 @@ html {
 }
 .box .media, .box .box {
     max-width: 100%;
+}
+.box img {
+  object-fit: contain;
 }
 
 /* code */
@@ -174,3 +180,8 @@ html {
 .w4 { max-width: 700px; }
 .w5 { max-width: 775px; }
 .wfull { max-width: 100%; }
+
+/* Text Alignment */
+.txt-left { text-align: left; }
+.txt-center { text-align: center; }
+.txt-right { text-align: right; }

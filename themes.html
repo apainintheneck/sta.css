@@ -30,62 +30,41 @@ Purpose: This page teaches the user how make branches, revert commits, and merge
         <div class="box w4">
             <h2> Themes </h2>
             <hr>
-            Themes allows you to make a copy of your project that you can change without interfering with the state of your original project. You are encouraged to make a new branch before making changes to a codebase.
+            You can create custom themes for this framework or use those created by the community. A few basic themes are included below. To add a theme to your project place the corresponding <code>config-sta.css</code> file in the same directory as the <code>sta.css</code> file. To create a custom theme you need to modify the <code>config-sta.css</code> file. Information on creating your own themes and more will be available in the future.
         </div>
 
         <div class="box w3">
-            In this case, we currently have an empty file called mammals.txt. Type <code>git checkout -b &lt;branch name&gt;</code>. This will create a new branch called add-text and checkout or move you to that new branch. You can check the current branch by typing <code>git branch</code>. Move to another branch by typing <code>git checkout &lt;branch name&gt;</code>.
-        </div>
-
-        <img src="img/branching_page-console-1.png" alt="Console window showing how to create a new branch using the git checkout -b <branch name> command." />
-
-        <div class="box w3">
-            Now let’s add some text to mammals.txt in the add-text branch. Add “alligators, wasps, caterpillars” and make a commit.
-        </div>
-
-        <img src="img/branching_page-console-2.png" alt="Console window showing how to make a commit to the new branch." />
-
-        <div class="box w3">
-            Of course, those aren’t names of mammals. We can revert the branch to the previous commit by typing <code>git revert HEAD</code>. The default text editor will pop up to allow you to type the commit message. Continue with the default commit message. Revert actually makes a new commit which reverses the changes made in the previous commit instead of deleting the previous commit.
-        </div>
-
-        <img src="img/branching_page-console-3.png" alt="Console window showing how to revert a commit using the git revert HEAD command." />
-
-        <div class="box w3">
-            There is another more precise way to reverse changes at the file level instead of the commit level. In the add-text branch, create and add a file named another.txt. Now add “alligators, wasps, caterpillars” to the file mammals.txt one more time. If we reverted the commit like last time, the file another.txt would be lost. We don’t want that. Instead, we can revert the contents of mammals.txt to the previous commit by typing <code>git restore &lt;file path&gt;</code>. Once again we have removed the non-mammals from the mammals.txt file while the another.txt file remains intact.
-        </div>
-
-        <img src="img/branching_page-console-4.png" alt="Console window showing how to restore a file using the git restore <file path> command." />
-
-        <div class="box w3">
-            We’re back where we started. Let’s add “tiger, lion, bear” to mammals.txt and make a commit.
-        </div>
-
-        <img src="img/branching_page-console-5.png" alt="Console window showing how to make another commit." />
-
-        <div class="box w3">
-            To add these changes to the main branch we move to that branch and type <code>git merge &lt;branch name&gt;</code>. That will merge changes into the checked out branch. In some cases, a merge conflict will appear and this will force you decide on which code to keep based upon the diff. Once you correct the merge conflict you will be able to merge. In this case, there are no conflicts so we can move on.
-        </div>
-
-        <img src="img/branching_page-console-6.png" alt="Console window showing how to merge branches using the git merger <branch name> command." />
-
-        <div class="box w3">
-            You can see that the merge worked because the mammals.txt file was blank before the merge and has a list of mammals after the merge.
+            <h2> Default Theme </h2>
             <hr>
-            Since we have merged in the changes from the add-text branch into the main branch, we can delete the add-text branch by typing <code>git branch -d &lt;branch name&gt;</code>.
-
-            <br><br>
-
-            <b>Note:</b> This command only works when you are NOT using the branch that is being deleted.
+            <img class="media clear" src="themes/default/default-theme.png"/>
         </div>
 
-        <img src="img/branching_page-console-7.png" alt="Console window showing how to delete a branch by using the git branch -d <branch name> command." />
-
-        <div class="box w4">
-            Now that you know how to branch and merge we will move on to using git with remote servers.
+        <div class="box w3">
+            <h2> Basic Purple Theme </h2>
+            <hr>
+            <img class="media clear" src="themes/basic-purple/basic-purple-theme.png"/>
+            <div class="txt-center">
+                <a class="btn dark" href="themes/basic-purple/config-sta.css" target="_blank" download>Download</a>
+            </div>
         </div>
 
-        <button class="btn" onclick="window.location.href='more.html'">Continue learning &#8594;</button>
+        <div class="box w3">
+            <h2> Basic Green Theme </h2>
+            <hr>
+            <img class="media clear" src="themes/basic-green/basic-green-theme.png"/>
+            <div class="txt-center">
+                <a class="btn dark" href="themes/basic-green/config-sta.css" target="_blank" download>Download</a>
+            </div>
+        </div>
+
+        <div class="box w3">
+            <h2> Basic Blue Theme </h2>
+            <hr>
+            <img class="media clear" src="themes/basic-blue/basic-blue-theme.png"/>
+            <div class="txt-center">
+                <a class="btn dark" href="themes/basic-blue/config-sta.css" target="_blank" download>Download</a>
+            </div>
+        </div>
 
         <footer class="footer">
             2020&copy; Robell<br>
