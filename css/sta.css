@@ -69,6 +69,7 @@ html {
 }
 .media.clear {
     box-shadow: none;
+    border-radius: none;
 }
 
 /* box */
@@ -97,7 +98,7 @@ html {
 }
 
 /* code */
-.box > code, .code {
+.box code, .code {
     border-radius: 5px;
     padding-right: 5px;
     padding-left: 5px;
