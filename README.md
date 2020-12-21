@@ -1,5 +1,5 @@
 # What is sta.css?
-It is a small, simple CSS framework that allows to build clean looking webpages with low effort. It is great for making tutorials and other simple static websites.
+It is a small, simple CSS framework that allows to build clean looking webpages with low effort. It is great for making tutorials and other simple static websites. Learn more about it on [the website](https://apainintheneck.github.io/sta.css/).
 
 ---
 
@@ -30,3 +30,7 @@ It is a small, simple CSS framework that allows to build clean looking webpages 
 - Find out how to change CSS @import statement in the sta.css file to allow multiple different config-sta.css files to be changed to allow themes to be tried in realtime.  
 - Add the ability to zoom when images are clicked without js.
 - Add modals without js.
+
+---
+
+## License: [MIT](LICENSE)
