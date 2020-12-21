@@ -30,3 +30,8 @@ It is a small, simple CSS framework that allows to build clean looking webpages 
 - Find out how to change CSS @import statement in the sta.css file to allow multiple different config-sta.css files to be changed to allow themes to be tried in realtime.  
 - Add the ability to zoom when images are clicked without js.
 - Add modals without js.
+
+---
+
+## License
+## [MIT](LICENSE)
