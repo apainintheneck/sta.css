@@ -1,5 +1,5 @@
 # What is sta.css?
-It is a small, simple CSS framework that allows to build clean looking webpages with low effort. It is great for making tutorials and other simple static websites. Learn more about it on [the website](https://apainintheneck.github.io/sta.css/).
+It is a small, simple CSS framework that allows you to build clean looking webpages with low effort. It is great for making tutorials and other simple static websites. Learn more about it on [the website](https://apainintheneck.github.io/sta.css/).
 
 ---
 
@@ -16,8 +16,10 @@ It is a small, simple CSS framework that allows to build clean looking webpages 
 - Write documentation for sta.css and config-sta.css.  
 - Add .wfixed which changes width from max-width to width.
 - Add default colors.
+- Style input tags. 
 - Allow full width media inside boxes.
 - Style default `<hr>` tags.
+- Create box options(light and dark).
 - Create two photo themes(light and dark).
 - Create test page.  
 - Add fixed link bars and buttons for navigation, social media, buttons, etc.  
