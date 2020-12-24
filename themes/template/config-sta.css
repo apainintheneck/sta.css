@@ -1,0 +1,41 @@
+/*
+sta.css - custom theme template
+Created by: Name <contact info> year
+Github: https://github.com/apainintheneck/sta.css
+Description:
+
+For more information about creating custom themes visit: https://github.com/apainintheneck/sta.css/wiki/Creating-Themes
+*/
+:root {
+    /* .body class */
+    /* --body-bg-color: ; */
+    /* --body-bg-img: ; */
+    /* --font-family: ; */
+    /* --txt-color: ; */
+
+    /* .nav class */
+    /* --nav-txt-color: ; */
+
+    /* .media class */
+    /* --media-margin: ; */
+
+    /* .box class */
+    /* --box-margin: ; */
+    /* --box-padding: ; */
+    /* --box-bg-color: ; */
+    /* --box-title-align: ; */
+    /* --box-txt-color: ; */
+    /* --clrbox-txt-color: ; */
+
+    /* .code class */
+    /* --code-bg-color: ; */
+    /* --code-txt-color: ; */
+
+    /* .btn class */
+    /* --btn-bg-color: ; */
+    /* --btn-txt-color: ; */
+
+    /* other variables */
+    /* --nf-bg-color: ; */
+    /* --border-radius: ; */
+}
