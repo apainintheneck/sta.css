@@ -1,5 +1,5 @@
 # What is sta.css?
-It is a small, simple CSS framework that allows you to build clean looking webpages with low effort. It is great for making tutorials and other simple static websites. Learn more about it on [the website](https://apainintheneck.github.io/sta.css/).
+It is a small, simple CSS framework that allows you to build clean looking webpages with low effort. It is great for making tutorials and other simple static websites. Learn more about it on the [project website](https://apainintheneck.github.io/sta.css/) and look at the documentation in the [project wiki](https://github.com/apainintheneck/sta.css/wiki).
 
 ---
 
