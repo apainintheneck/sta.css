@@ -18,6 +18,9 @@ html {
 .body {
     background-color: var(--body-bg-color, #FFEFD5);
     background-image: var(--body-bg-img);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     text-align: center;
     font-family: var(--font, sans-serif);
     color: var(--txt-color);
@@ -32,6 +35,7 @@ html {
     margin-top: 25px;
     margin-bottom: 15px;
     font-size: 2em;
+    color: var(--header-txt-color);
 }
 
 /* navbar */
@@ -56,13 +60,13 @@ html {
 
 /* navbar and footer */
 .nav, .footer {
-    background-color: var(--nf-bg-color, #F08080);
     margin: auto;
     margin-bottom: 20px;
     margin-top: 20px;
     border-radius: var(--border-radius, 15px);
-    max-width: 850px;
+    max-width: var(--nf-width, 850px);
     padding: 15px;
+    background-color: var(--nf-bg-color, #F08080);
 }
 
 /* media */
@@ -176,12 +180,12 @@ html {
 }
 
 /* Width */
-.w0 { max-width: 400px; }
-.w1 { max-width: 475px; }
-.w2 { max-width: 550px; }
-.w3 { max-width: 625px; }
-.w4 { max-width: 700px; }
-.w5 { max-width: 775px; }
+.w0 { max-width: var(--width-floor, 400px); }
+.w1 { max-width: calc(var(--width-floor, 400px) + var(--width-step, 75px) * 1); }
+.w2 { max-width: calc(var(--width-floor, 400px) + var(--width-step, 75px) * 2); }
+.w3 { max-width: calc(var(--width-floor, 400px) + var(--width-step, 75px) * 3); }
+.w4 { max-width: calc(var(--width-floor, 400px) + var(--width-step, 75px) * 4); }
+.w5 { max-width: calc(var(--width-floor, 400px) + var(--width-step, 75px) * 5); }
 .wfull { max-width: 100%; }
 .wmax { width: 100%; }
 

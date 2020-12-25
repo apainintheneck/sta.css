@@ -13,6 +13,9 @@ For more information about creating custom themes visit: https://github.com/apai
     /* --font-family: ; */
     /* --txt-color: ; */
 
+    /* .header class */
+    /* --header-txt-color: ; */
+
     /* .nav class */
     /* --nav-txt-color: ; */
 
@@ -35,7 +38,12 @@ For more information about creating custom themes visit: https://github.com/apai
     /* --btn-bg-color: ; */
     /* --btn-txt-color: ; */
 
+    /* width */
+    /* --width-floor: ; */
+    /* --width-step: ; */
+
     /* other variables */
     /* --nf-bg-color: ; */
+    /* --nf-width: ; */
     /* --border-radius: ; */
 }
