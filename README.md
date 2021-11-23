@@ -11,7 +11,7 @@ It is a small, simple CSS framework that allows you to build clean looking webpa
 - Customizable themes using the config-sta.css file.  
 
 ### To Do:  
-- Fix content alignment issues after <details> tag is clicked when content is not in boxes.
+- Fix content alignment issues after `<details>` tag is clicked when content is not in a container.
 - Add default colors.
 - Style `<input>` tags. 
 - Add full width media inside boxes.
